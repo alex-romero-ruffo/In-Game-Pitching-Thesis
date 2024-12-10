@@ -35,8 +35,8 @@ This repository includes:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-repo-url/mlb-pitching-strategy.git
-    cd mlb-pitching-strategy
+    git clone https://github.com//alex-romero-ruffo/In-Game-Pitching-Thesis.git
+    cd 'Thesis Final'
     ```
 
 2. Install dependencies:
