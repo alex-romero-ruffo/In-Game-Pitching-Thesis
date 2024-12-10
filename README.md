@@ -1,4 +1,3 @@
-```markdown
 # MLB Pitching Strategy Analysis
 
 This repository provides tools for analyzing MLB pitching data, focusing on metrics such as `Pitching+`, `xRV`, and sequencing strategies. The project leverages Statcast data to develop data-driven insights into pitcher performance and in-game decisions.
