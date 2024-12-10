@@ -26,7 +26,7 @@ This repository includes:
 - **Pitching+ Analysis**: Calculate advanced metrics like `xRV` and aggregate pitcher statistics.
 - **Sequencing Analysis**: Investigate how pitch sequences impact batter outcomes.
 - **Managerial Decision Models**: Analyze in-game strategies and identify optimal decisions.
-- **Visualization Tools**: Generate plots and visualizations for feature importance and model performance.
+- **Visualization Tools**: Generate plots and visualizations for specific games and pitchers
 - **Comparison Tools**: Compare models to external benchmarks like FanGraphs.
 
 ---
@@ -65,7 +65,7 @@ python scraper.py --start_date 2023-03-30 --end_date 2023-11-03 --output_file st
 
 ### 2. Pitching+ Models
 
-The `Pitching+v2.ipynb` notebook calculates advanced metrics (`xRV`, `Pitching+`) and aggregates pitcher statistics.
+The `Pitching+v2.ipynb` notebook calculates advanced metrics (`xRV`, `Pitching+`) and aggregates pitcher statistics. This relies on statcast and spin data, please ensure the data is placed in the appropriate locations.
 
 **Inputs:**
 - The Statcast data downloaded via `scraper.py`.
@@ -105,7 +105,7 @@ The `Analysisv3.ipynb` notebook focuses on managerial decision-making, such as w
 
 The comparison scripts allow you to benchmark your models against external sources like FanGraphs.
 
-- `compare_model_with_fangraphs.py`: Compares your `Pitching+` model outputs with FanGraphs' metrics.
+- `compare_model_with_fangraphs.py`: Compares `Pitching+` model outputs with FanGraphs' metrics.
 - `compare_MSE.py`: Evaluates the mean squared error (MSE) of your models.
 
 **Steps:**
@@ -118,16 +118,8 @@ python compare_model_with_fangraphs.py
 
 ### 6. Visual Tool
 
-The `visualization.py` script generates plots for feature importance, model performance, and pitch sequencing insights.
+The `visualization.py` script generates in-game pitcher stastics. this is not needed for the other models, as it is only a preliminary visual aid and a precursor to the models.
 
-**Steps:**
-1. Ensure `total_df` and related outputs are available.
-2. Run the script to generate visualizations.
-
-**Example:**
-```bash
-python visualization.py
-```
 
 ---
 
