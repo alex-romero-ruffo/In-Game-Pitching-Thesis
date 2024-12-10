@@ -133,7 +133,7 @@ The `visualization.py` script generates in-game pitcher stastics. this is not ne
 
 ## Requirements
 
-The project requires Python 3.8+ and the packages listed in `requirements.txt`. Install dependencies using:
+The project requires Python 3.12+ and the packages listed in `requirements.txt`. Install dependencies using:
 
 ```bash
 pip install -r requirements.txt
